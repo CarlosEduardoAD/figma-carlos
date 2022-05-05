@@ -1,5 +1,4 @@
 # figma-carlos
 Projeto figma do carlos do senai
 
-branch do vini
-essa branch é do vini
+Essa branch é do vini
