@@ -200,6 +200,7 @@ p:hover{
     flex-direction: row;
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #ff0000 0%, #FF8469 100%);
     height: 200px;
+    border-radius: 4px;
 }
 
 /* Centralização da imagem do zacarias */
@@ -218,6 +219,7 @@ p:hover{
     display : flex;
     flex-direction: row;
     height: 200px;
+    border-radius: 4px;
 }
 
 /* Estilização do tipo de texto que vai na linha vermelha */
@@ -278,7 +280,7 @@ p:hover{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap : 20px;
-    margin-left : 35px;
+    margin-left : 25px;
     margin-top : 40px;
 }
 
@@ -497,4 +499,43 @@ p:hover{
 .burguer{
     margin-top : 15px;
     margin-right : 12px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.btn{
+    margin-top: 32px;
+}
+
+input#botao{
+    border: none;
+    border-radius: 5px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+}
+
+.input{
+    margin-top: 12px;
+    margin-bottom : 12px;
+}
+
+.inputs{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+
+
+.label{
+    display : flex;
+    flex-direction: column;
 }
