@@ -507,6 +507,7 @@ p:hover{
     justify-content: center;
     flex-direction: column;
     gap: 30px; 
+    margin-top : 180px;
 }
 
 .btn{
@@ -525,17 +526,21 @@ input#botao{
 .input{
     margin-top: 12px;
     margin-bottom : 12px;
+    border: 2px solid black;
+    border-radius: 3px;
+    
 }
 
 .inputs{
     display : flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-self: center;;
 }
 
 
 .label{
     display : flex;
     flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
 }
