@@ -8,6 +8,9 @@ const textSenha = document.getElementById('textSenha')
 const botao = document.getElementById('botao')
 const textFormulario = document.getElementById('textFormulario')
 
+let db = openDatabase("BD22","v3.0", "Amogus",2*1024*1024)
+db.transaction(function (tx){tx.executeSql("CREATE TABLE IF NOT EXISTS figma_tabela(id INTEGER PRIMARY KEY, nome VARCHAR(100), email VARCHAR(100), senha VARCHAR(100))")})
+
 botao.addEventListener('click', function (e) {
     e.preventDefault()  
     
@@ -48,6 +51,14 @@ function validarSenha(senhaValor){
     let padraoSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{6,}$/
 
     return padraoSenha.test(senhaValor)
+}
+
+function gravarInfo(){
+    db.transaction(function(tx){
+        tx.executeSql("Insert into figma_tabela(nome,email,senha) VALUES(?,?,?)", [nome.value, email.value, senha.value])
+        location.reload()
+    })
+}
 
     /* 
         /^
@@ -59,7 +70,6 @@ function validarSenha(senhaValor){
         $/
     
     */    
-}
 
 /*
 
