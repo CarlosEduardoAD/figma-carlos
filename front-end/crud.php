@@ -6,14 +6,14 @@ $email = "";
 $senha = "";
 $telefone = "";
 $endereco = "";
-$gravar = "";
+$enviar = "";
 
 if(!empty($_POST['nome'])){
     $nome = $_POST['nome'];
 }
 
 if(!empty($_POST['email'])){
-    $nome = $_POST['email'];
+    $email = $_POST['email'];
 }
 
 if(!empty($_POST['senha'])){
@@ -28,14 +28,14 @@ if(!empty($_POST['endereco'])){
     $endereco = $_POST['endereco'];
 }
 
-if(!empty($_POST['gravar'])){
-    $gravar = $_POST['gravar'];
+if(!empty($_POST['enviar'])){
+    $enviar = $_POST['enviar'];
 }
 
-if($gravar == 'Gravar' && $id !=""){
-    $res_insert = "INSERT INTO clientes (id_cliente, nome_usuario, email, senha, telefone, endereco, buguer_plus) VALUES ('', '$nome', '$email', '$senha', '$telefone', '$endereco', 'Não') ";
+if($enviar == 'Enviar'){
+    $res_insert = "INSERT INTO clientes (nome_usuario, email, senha, telefone, endereco, buguer_plus) VALUES ('$nome', '$email', '$senha', '$telefone', '$endereco', 'Não') ";
     $resposta_insert = mysqli_query($conn, $res_insert);
-    echo "Gravar Aceito";
+    echo "Enviar Aceito";
 }
 
 ?>

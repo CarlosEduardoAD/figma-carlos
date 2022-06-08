@@ -7,7 +7,7 @@ $tipo= "";
 $dono = "";
 $ha = "";
 $hf = "";
-$gravar = "";
+$enviar = "";
 
 if(!empty($_POST['nome'])){
     $nome = $_POST['nome'];
@@ -33,12 +33,12 @@ if(!empty($_POST['hf'])){
     $hf = $_POST['hf'];
 }
 
-if(!empty($_POST['gravar'])){
-    $gravar = $_POST['gravar'];
+if(!empty($_POST['enviar'])){
+    $enviar = $_POST['enviar'];
 }
 
-if($gravar == 'Gravar' && $id !=""){
-    $res_insert = "INSERT INTO restaurante (id_restaurante, nome_restaurane, avaliacao, endereco, tipo, dono_restaurante) VALUES ('', '$nome', '10', '$endereco', '$tipo', '$dono') ";
+if($enviar == 'Enviar'){
+    $res_insert = "INSERT INTO restaurante (nome_resturante, avaliacao, endereco, tipo, dono_restaurante) VALUES ('$nome', '10', '$endereco', '$tipo', '$dono') ";
     $resposta_insert = mysqli_query($conn, $res_insert);
     echo "Gravar Aceito";
 }

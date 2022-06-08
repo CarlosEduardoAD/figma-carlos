@@ -26,32 +26,32 @@ botao.addEventListener('click', function (e) {
 
 })
 
-email.addEventListener('keyup', function () {
-    if(validarEmail(email.value) !== true){
-        textEmail.innerHTML = 'O formato do email deve ser com <br> letras minúsculas ex.: teste@gmail.com'    
-    }else{
-        textEmail.textContent = ''
-    }
-}) 
+// email.addEventListener('keyup', function () {
+//     if(validarEmail(email.value) !== true){
+//         textEmail.innerHTML = 'O formato do email deve ser com <br> letras minúsculas ex.: teste@gmail.com'    
+//     }else{
+//         textEmail.textContent = ''
+//     }
+// }) 
 
-function validarEmail(e_mail){
-    let padraoEmail = /^[a-z0-9.]+@[a-z0-9]+\.([a-z]+)?$/
-    return padraoEmail.test(e_mail)
-}
+// function validarEmail(e_mail){
+//     let padraoEmail = /^[a-z0-9.]+@[a-z0-9]+\.([a-z]+)?$/
+//     return padraoEmail.test(e_mail)
+// }
 
-senha.addEventListener('keyup', function() {
-    if(validarSenha(senha.value) !== true){
-        textSenha.innerHTML = 'O formato da senha deve ter 6 caracteres, <br> com 1 letra maiúscula, 1 minúscula, 1 número <br> e 1 carctere especial. ex.: Br@sil2022'    
-    }else{
-        textSenha.textContent = ''
-    }
-})
+// senha.addEventListener('keyup', function() {
+//     if(validarSenha(senha.value) !== true){
+//         textSenha.innerHTML = 'O formato da senha deve ter 6 caracteres, <br> com 1 letra maiúscula, 1 minúscula, 1 número <br> e 1 carctere especial. ex.: Br@sil2022'    
+//     }else{
+//         textSenha.textContent = ''
+//     }
+// })
 
-function validarSenha(senhaValor){
-    let padraoSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{6,}$/
+// function validarSenha(senhaValor){
+//     let padraoSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{6,}$/
 
-    return padraoSenha.test(senhaValor)
-}
+//     return padraoSenha.test(senhaValor)
+// }
 
 function gravarInfo(){
     db.transaction(function(tx){

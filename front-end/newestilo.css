@@ -510,9 +510,18 @@ p:hover{
     margin-top : 180px;
 }
 
+.btnclass{
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 52px;
+}
+
 .btn{
     margin-top: 32px;
 }
+
 
 input#botao{
     border: none;
