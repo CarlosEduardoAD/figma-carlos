@@ -286,12 +286,16 @@ p:hover{
 
 /* Rodapé da compras */
 
+.menu{
+    margin-bottom: -45px;
+}
+
 .rodapePesquisa{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 75px;
     padding-top: 10px;
     padding-left : 25px;
     padding-right : 25px;
@@ -305,13 +309,30 @@ p:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 210px;
     padding-top: 10px;
     padding-left : 25px;
     padding-right : 25px;
     background: #ff0000;
     border : none;
     border-radius: 120px;
+}
+.rodapePesquisa3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 210px;
+    padding-top: 10px;
+    padding-left : 25px;
+    padding-right : 25px;
+    background: #ff0000;
+    border : none;
+    border-radius: 120px;
+}
+
+.menuMover2{
+    margin-top : -243px;
 }
 
 /* Página de pagamentos */
@@ -551,6 +572,30 @@ p:hover{
 
 .btn{
     margin-top: 32px;
+    padding-right : 12px;
+    padding-left : 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.titulo{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 55px;
+    color : white;
+    font-weight: 900;
+}
+.titulo2{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 40px;
+    color : white;
+    font-weight: 900;
+    margin-top : -80px;
 }
 
 
@@ -569,7 +614,14 @@ input#botao{
     background: #c0c0c0;
     opacity : 50%;
     border-radius: 5px;
-    
+}
+
+.inputs2{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin-top : -40px;
 }
 
 .inputs{
@@ -577,7 +629,7 @@ input#botao{
     flex-direction: row;
     align-items: center;
     justify-self: center;
-    margin-top : 80px;
+    margin-top : -40px;
 }
 
 

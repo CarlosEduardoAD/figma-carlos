@@ -35,7 +35,8 @@ if(!empty($_POST['enviar'])){
 if($enviar == 'Enviar'){
     $res_insert = "INSERT INTO clientes (nome_usuario, email, senha, telefone, endereco, buguer_plus) VALUES ('$nome', '$email', '$senha', '$telefone', '$endereco', 'Não') ";
     $resposta_insert = mysqli_query($conn, $res_insert);
-    echo "Enviar Aceito";
+    header("location: menu.html");
+    die()
 }
 
 ?>
