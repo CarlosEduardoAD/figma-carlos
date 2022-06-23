@@ -20,7 +20,6 @@
 /* Div do texto "Bem vindo ao" */
 
 .texto{
-
     padding-top: 30px;
     color: black;
     font-family: 'Red Hat Display', sans-serif;
@@ -46,7 +45,7 @@
     color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    border: red; 
+    border: red;
     border-radius: 10px;
     background-color: red;
     font-size: 18px;
@@ -65,7 +64,7 @@
     color: red;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    border:red solid 2px; 
+    border:red solid 2px;
     border-radius: 10px;
     background-color: whitesmoke;
     font-size: 18px;
@@ -127,7 +126,7 @@ p:hover{
     margin: 5px;
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
 }
 
 /* Estilização do texto do card */
@@ -146,6 +145,7 @@ p:hover{
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-right: 18px;
 }
 
 /* estilização dos textos dos nomes dos restaurantes  */
@@ -260,12 +260,12 @@ p:hover{
 .barradepesquisa{
     display : flex;
     align-items: flex-start;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Estilização do texto da barra de pesquisa */
 
-.barradepesquisa h2{ 
+.barradepesquisa h2{
     border : 1px solid  rgb(194, 194, 194);
     padding : 15px 100px;
     background-color: rgb(194, 194, 194);
@@ -299,7 +299,7 @@ p:hover{
     padding-top: 10px;
     padding-left : 25px;
     padding-right : 25px;
-    background: #ff0000;
+    background: #FE3E3E;
     border : none;
     border-radius: 120px;
 }
@@ -309,11 +309,11 @@ p:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 210px;
+    margin-top: 90px;
     padding-top: 10px;
     padding-left : 25px;
     padding-right : 25px;
-    background: #ff0000;
+    background: #FE3E3E;
     border : none;
     border-radius: 120px;
 }
@@ -322,11 +322,24 @@ p:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 210px;
+    margin-top: 35px;
     padding-top: 10px;
     padding-left : 25px;
     padding-right : 25px;
-    background: #ff0000;
+    background: #FE3E3E;
+    border : none;
+    border-radius: 120px;
+}
+.rodapePesquisa4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-left : 25px;
+    padding-right : 25px;
+    background: #FE3E3E;
     border : none;
     border-radius: 120px;
 }
@@ -363,7 +376,7 @@ p:hover{
 .pix h2{
     display : flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border-radius : 5px;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
@@ -379,7 +392,7 @@ p:hover{
 .cartao{
     display : flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Centralização do texto no botão de outro */
@@ -387,7 +400,7 @@ p:hover{
 .pix{
     display : flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 /* Centralização do texto no botão de outro */
@@ -472,7 +485,7 @@ p:hover{
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     color : white;
     font-family: 'Red Hat Display', sans-serif;
-    
+
 }
 
 /* Centralização do texto da forma de pagamento */
@@ -545,7 +558,7 @@ p:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px; 
+    gap: 30px;
     height: 720px;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border : none;
@@ -558,7 +571,7 @@ p:hover{
     justify-content: center;
     flex-direction: column;
     gap: 70px;
-    height : 720px; 
+    height : 720px;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border : none;
     border-radius: 5px;
