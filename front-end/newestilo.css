@@ -47,8 +47,12 @@
     font-weight: bold;
     border: red;
     border-radius: 10px;
-    background-color: red;
+    background-color:  #FE3E3E ;
     font-size: 18px;
+}
+
+.botao1 a:hover{
+    background-color : black;
 }
 
 /* segundo botão */
@@ -64,7 +68,7 @@
     color: red;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
-    border:red solid 2px;
+    border:#FE3E3E solid 2px;
     border-radius: 10px;
     background-color: whitesmoke;
     font-size: 18px;
