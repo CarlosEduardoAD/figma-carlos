@@ -369,6 +369,7 @@ p:hover{
 
 .formaDePagamento h2{
     font-family: 'Red Hat Display', sans-serif;
+    font-size : 34px;
 }
 
 /* Estilização do texto no botão do pix */
@@ -377,9 +378,8 @@ p:hover{
     display : flex;
     align-items: center;
     justify-content: center;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    background: #FE3E3E;
     font-family: 'Red Hat Display', sans-serif;
     padding : 4px 125px;
     color : white;
@@ -418,10 +418,9 @@ p:hover{
     display : flex;
     align-items: center;
     justify-content: center;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     padding : 4px 80px;
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    background: #FE3E3E;
     font-family: 'Red Hat Display', sans-serif;
     color : white;
 }
@@ -432,10 +431,9 @@ p:hover{
     display : flex;
     align-items: center;
     justify-content: center;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     padding : 4px 110px;
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    background: gray;
     font-family: 'Red Hat Display', sans-serif;
     color : white;
 }
@@ -447,10 +445,10 @@ p:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center ;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    border : 1px solid linear-gradient(180deg, rgba(254,62,62,1) 0%, rgba(255,132,105,1) 100%);
     margin-top : 45px;
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    background: linear-gradient(180deg, rgba(254,62,62,1) 0%, rgba(255,132,105,1) 100%);
     font-family: 'Red Hat Display', sans-serif;
     color : white;
 }
@@ -479,12 +477,14 @@ p:hover{
     display : flex;
     align-items: center;
     justify-content: center;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
-    padding : 3px 4px;
+    border : 1px solid linear-gradient(180deg, rgba(254,62,62,1) 0%, rgba(255,132,105,1) 100%);
+    padding :  12px 12px 8px;
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    font-size:28px;
+    background: linear-gradient(180deg, rgba(254,62,62,1) 0%, rgba(255,132,105,1) 100%);
     color : white;
     font-family: 'Red Hat Display', sans-serif;
+    font-weight : bold;
 
 }
 
@@ -538,10 +538,9 @@ p:hover{
     display : flex;
     align-items: center;
     justify-content: center;
-    border : 1px solid linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     padding : 4px 65px;
     border-radius : 5px;
-    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    background: #FE3E3E;
     font-family: 'Red Hat Display', sans-serif;
     color : white;
 }
@@ -620,6 +619,7 @@ input#botao{
     color: white;
     background: red
 }
+
 
 .input{
     margin-top: 12px;
