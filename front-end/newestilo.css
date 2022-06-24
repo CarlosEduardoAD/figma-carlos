@@ -103,7 +103,7 @@ p:hover{
 /* Estilziação card de oferta */
 
 .oferta{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, #FF8469 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #FE3E3E 0%, #FF8469 100%);
     border-radius: 10px;
     color: white;
     display: flex;
@@ -198,7 +198,7 @@ p:hover{
 .linha1{
     display : flex;
     flex-direction: row;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #ff0000 0%, #FF8469 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #FE3E3E 0%, #FF8469 100%);
     height: 200px;
     border-radius: 4px;
 }
