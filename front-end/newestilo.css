@@ -6,6 +6,16 @@
     src : url("fonte.otf")
 }
 
+body{
+    background-color: white;
+    color : black;
+}
+
+.dark_mode{
+    background-color: black;
+    color : white;
+}
+
 /*Página de login */
 
 /* Div principal que determina centralização do texto "Bem vindo ao" */
@@ -263,18 +273,23 @@ p:hover{
 
 .barradepesquisa{
     display : flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+
 }
 
 /* Estilização do texto da barra de pesquisa */
 
 .barradepesquisa h2{
-    border : 1px solid  rgb(194, 194, 194);
-    padding : 15px 100px;
+    display : flex;
+    flex-direction: row;
+    gap : 30px;
+    white-space: nowrap;
+    padding : 15px 80px;
     background-color: rgb(194, 194, 194);
     font-family: 'Red Hat Display', sans-serif;
-    border-radius: 5px;
+    border-radius: 12px;
     color : rgb(83, 83, 83);
 }
 
@@ -562,7 +577,12 @@ p:hover{
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    height: 720px;
+    min-height: 100vh;
+    min-width: max-content;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -10px;
+    margin-bottom: -10px;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border : none;
     border-radius: 5px;
@@ -574,7 +594,12 @@ p:hover{
     justify-content: center;
     flex-direction: column;
     gap: 70px;
-    height : 720px;
+    min-height: 100vh;
+    min-width: max-content;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -10px;
+    margin-bottom: -10px;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
     border : none;
     border-radius: 5px;
@@ -590,8 +615,8 @@ p:hover{
     margin-top: 32px;
     padding-right : 12px;
     padding-left : 12px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .titulo{
@@ -630,7 +655,11 @@ input#botao{
     margin-bottom : 12px;
     background: #c0c0c0;
     opacity : 50%;
-    border-radius: 5px;
+    border : none;
+    border-radius: 10px;
+    padding-left:5px;
+    padding-right: 100px;
+    padding-top : 10px;
 }
 
 .inputs2{
@@ -638,7 +667,11 @@ input#botao{
     flex-direction: row;
     align-items: center;
     justify-self: center;
-    margin-top : -40px;
+    margin-top : -90px;
+    background-color : white;
+    padding : 45px;
+    border : none;
+    border-radius: 20px;
 }
 
 .inputs{
@@ -646,7 +679,11 @@ input#botao{
     flex-direction: row;
     align-items: center;
     justify-self: center;
-    margin-top : -40px;
+    margin-top : -90px;
+    background-color : white;
+    padding : 45px;
+    border : none;
+    border-radius: 20px;
 }
 
 
@@ -654,5 +691,29 @@ input#botao{
     display : flex;
     flex-direction: column;
     font-family: 'Red Hat Display', sans-serif;
-    color : white;
+    font-size: larger;
+    color : black;
+}
+
+.botoesCadastro{
+    display : grid;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 20px
+}
+
+.textoErro{
+    display : flex;
+    flex-direction: row;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: medium;
+    color : black;
+}
+
+.small{
+    display : flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Red Hat Display', sans-serif;
+    color : black;
 }

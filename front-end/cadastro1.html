@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="newestilo.css" />
     <title>Cadastro</title>    
   </head>
-  <body>
-
+  <body class="padding : 0; margin : 0;">
     <div class="container">
       <p class="titulo animate__animated animate__fadeInUp">Se cadastre !</p>
       <div class="inputs">
       <form id="formulario" method="post" action="crud.php">
+        <div>
           <label for="nome" class='label animate__animated animate__fadeInLeft'>Nome:</label>
           <input type="text" id="nome" name="nome" class='input'/>
           <small id="textNome"></small>
+        </div>
         <div>
           <label for="email" class='label animate__animated animate__fadeInLeft'>E-mail:</label>
           <input type="text" id="email" name="email" class='input' />
@@ -34,16 +35,22 @@
         <div>
             <label for="senha" class='label animate__animated animate__fadeInLeft'>Senha:</label>
             <input type="password" id="senha" name="senha" class='input'/>
-            <small id="textSenha" class='label'></small>
+            <small id="textSenha" class='small'></small>
+          </div>
+          <small class="textoErro" id="textFormulario"></small>
+          <div class="botoesCadastro">
+          <div class="btnclass animate__animated animate__fadeInDown">
+            <input id="botao" class="btn background-color:blue;" type="submit" name="enviar" value="Entrar com Google" onclick="gravarInfo()"/>  
+          </div>
+          <div class="btnclass animate__animated animate__fadeInDown">
+            <input id="botao" class="btn" type="submit" name="enviar" value="Enviar" onclick="gravarInfo()"/>  
           </div>
         </div>
-        <div class="btnclass animate__animated animate__fadeInDown">
-          <input id="botao" class="btn" type="submit" name="enviar" value="Enviar" onclick="gravarInfo()"/>  
         </div>
         <br/>
-        <small id="textFormulario"></small>
       </form>
     </div>
   </div>
+  <script src="cadastro.js"></script>
   </body>
 </html>
