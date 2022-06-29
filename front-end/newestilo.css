@@ -47,6 +47,41 @@ body{
     gap: 10px;
 }
 
+.card{
+    width: 395px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card2{
+    width: 395px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.imgCard{
+    display : flex;
+    align-items: center;
+    justify-content: start;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);
+    padding-top: 10px;
+    border-radius: 23px 0px 0px 23px;
+}
+
+.pCard{
+    display : flex;
+    align-items: center;
+    justify-content: start;
+    background: gray;
+    
+    border-radius: 23px 0px 0px 23px;
+}
 /* primeiro botão */
 
 .botao1{
