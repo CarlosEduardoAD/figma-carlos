@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="newestilo.css" />
+    <title>Cadastro</title>    
+  </head>
+  <body class="padding : 0; margin : 0;">
+    <div class="container">
+      <p class="titulo animate__animated animate__fadeInUp">Entre e Coma!</p>
+      <div class="inputs">
+      <form id="formulario" method="post" action="crud.php">
+        <div>
+          <label for="email" class='label animate__animated animate__fadeInLeft'>E-mail:</label>
+          <input type="text" id="email" name="email" class='input' />
+          <small id="textEndereco" class='label'></small>
+        </div>
+        <div>
+            <label for="senha" class='label animate__animated animate__fadeInLeft'>Senha:</label>
+            <input type="password" id="senha" name="senha" class='input'/>
+            <small id="textSenha" class='small'></small>
+          </div>
+          <small class="textoErro" id="textFormulario"></small>
+          <div class="botoesCadastro">
+          <div class="btnclass animate__animated animate__fadeInDown">
+            <input id="botao" class="btn background-color:blue;" type="submit" name="enviar" value="Entrar com Google" onclick="gravarInfo()"/>  
+          </div>
+          <div class="btnclass animate__animated animate__fadeInDown">
+            <input id="botao" class="btn" type="submit" name="enviar" value="Enviar" onclick="gravarInfo()"/>  
+          </div>
+        </div>
+        </div>
+        <br/>
+      </form>
+    </div>
+  </div>
+  <script src="cadastro.js"></script>
+  </body>
+</html>

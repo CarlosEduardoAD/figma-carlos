@@ -256,6 +256,14 @@ p:hover{
     border-radius: 4px;
 }
 
+.linha3{
+    display : flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, #FE3E3E 0%, #FF8469 100%);
+    height: 200px;
+    border-radius: 4px;
+}
+
 /* Centralização da imagem do zacarias */
 
 .img_zacarias img {
@@ -755,4 +763,28 @@ input#botao{
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
     color : black;
+}
+
+/* Centralização da barra de pesquisa */
+
+.barradepesquisa2{
+    display : flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+/* Estilização do texto da barra de pesquisa */
+
+.barradepesquisa2 h2{
+    display : flex;
+    flex-direction: row;
+    gap : 30px;
+    white-space: nowrap;
+    padding : 15px 80px;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,132,105,1) 100%);;
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 12px;
+    color : rgb(83, 83, 83);
 }

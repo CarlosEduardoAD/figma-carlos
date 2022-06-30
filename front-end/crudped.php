@@ -42,6 +42,6 @@ if($enviar == 'Enviar'){
     $resposta_insert = mysqli_query($conn, $res_insert);
     header("location: menu.html");
     die()
-}
+} 
 
 ?>
