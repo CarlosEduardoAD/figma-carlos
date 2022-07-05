@@ -39,9 +39,9 @@ if(!empty($_POST['enviar'])){
 
 if($enviar == 'Enviar'){
     $res_insert = "INSERT INTO restaurante (nome_resturante, avaliacao, endereco, tipo, dono_restaurante) VALUES ('$nome', '10', '$endereco', '$tipo', '$dono') ";
-    $resposta_insert = mysqli_query($conn, $res_insert);
+    $resposta_insert = mysqli_query($conn, $res_select);
     header("location: menu.html");
     die()
-} 
+}
 
 ?>
