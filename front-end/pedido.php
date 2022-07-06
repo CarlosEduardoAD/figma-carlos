@@ -1,32 +1,36 @@
-<button onclick = "location.href='form.php'">Voltar</button>
-</br>
+
 
 <?php
 include_once("conexao.php");
 
-$preco_total_total = "27.89";
-$forma_pagamento = "Cartão de crédito";
-$id_user = "";
-$gravar = "";
+$quantidade = '';
+$preco_unitario = "27.99";
+$nome = "X-Defunto";
+$comprar = "";
+$preco_total = (int)$preco_unitario * (int)$quantidade;
 
-
-if(!empty($_POST['preco_total'])){
-    $preco_total = $_POST['preco_total'];
+if(!empty($_POST['quantidade'])){
+    $quantidade = $_POST['quantidade'];
     //echo "$preco_total </br>";
 }
 
-if(!empty($_POST['forma_pagamento'])){
-    $forma_pagamento = $_POST['forma_pagamento'];
-    //echo "$forma_pagamento </br>";
+if(!empty($_POST['comprar'])){
+    $comprar = $_POST['comprar'];
+    //echo "$preco_total </br>";
 }
 
-if(!empty($_POST['id_user'])){
-    $id_user = $_POST['id_user'];
-    //echo "$id_user </br>";
-}
-
-}
-
-if($gravar == 'Gravar' && $id !=""){
-    $res_insert = "INSERT INTO pedido (preco_total, forma_pagamento, id_user, status) VALUES ('$preco_total', '$forma_pagamento', '$id_user', "Em Produção")";
+if($comprar == 'Comprar'){
+    $res_select = "SELECT id_produto, nome_produto, preco_produto from produto WHERE nome_produto = '$nome'";
+    $resposta_select = mysqli_query($conn, $res_select);
+    $row = mysqli_fetch_assoc($resposta_select); 
+    $id = $row['id_produto'];
+    $nome = $row['nome_produto'];
+    echo "$nome <br>";
+    $preco = $row['preco_produto'];
+    echo "$preco <br>";
+    $res_insert = "INSERT INTO pedido (preco_total, forma_pagamento, id_user ,situacao) VALUES ('$preco_unitario', 'Cartão de crédito', '1' ,'Em Produção')";
     $resposta_insert = mysqli_query($conn, $res_insert);
+    $res_insert2 = "INSERT into item (id_pedido, id_produto, quantidade, preco_unitario) VALUES ('1', '$id','$quantidade', '$preco_total')";
+    $resposta_insert2 = mysqli_query($conn, $res_insert2);
+    header("location : compras.php");
+}
