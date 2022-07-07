@@ -21,8 +21,8 @@ if(!empty($_POST['comprar'])){
 
 if($comprar == 'Comprar'){
     $res_select3 = "SELECT * FROM clientes WHERE nome_usuario = 'Carlos'";
-    $resposta_select3 = mysqli_query($conn, $res_select);
-    $row2 = mysqli_fetch_assoc($resposta_select);
+    $resposta_select3 = mysqli_query($conn, $res_select3);
+    $row2 = mysqli_fetch_assoc($resposta_select3);
     $id_cliente = $row2['id_cliente'];
     $res_select = "SELECT id_produto, nome_produto, preco_produto from produto WHERE nome_produto = '$nome'";
     $resposta_select = mysqli_query($conn, $res_select);
@@ -32,7 +32,7 @@ if($comprar == 'Comprar'){
     echo "$nome <br>";
     $preco = $row['preco_produto'];
     echo "$preco <br>";
-    $res_insert = "INSERT INTO pedido (preco_total, forma_pagamento, id_user ,situacao) VALUES ('$preco_unitario', 'Cartão de crédito', $id_cliente ,'Em Produção')";
+    $res_insert = "INSERT INTO pedido (preco_total, forma_pagamento, id_user, situacao) VALUES ('$preco_unitario', 'Cartão de crédito', '$id_cliente' ,'Em Produção')";
     $resposta_insert = mysqli_query($conn, $res_insert);
     $res_insert2 = "INSERT into item (id_pedido, id_produto, quantidade, preco_unitario) VALUES ('1', '$id','$quantidade', '$preco_total')";
     $resposta_insert2 = mysqli_query($conn, $res_insert2);
