@@ -7,7 +7,6 @@ $quantidade = '';
 $preco_unitario = "27.99";
 $nome = "X-Defunto";
 $comprar = "";
-$preco_total = (int)$preco_unitario * (int)$quantidade;
 
 if(!empty($_POST['quantidade'])){
     $quantidade = $_POST['quantidade'];
@@ -29,12 +28,11 @@ if($comprar == 'Comprar'){
     $row = mysqli_fetch_assoc($resposta_select);
     $id = $row['id_produto'];
     $nome = $row['nome_produto'];
-    echo "$nome <br>";
     $preco = $row['preco_produto'];
-    echo "$preco <br>";
+    $preco_total = (float)$preco_unitario * (int)$quantidade;
     $res_insert = "INSERT INTO pedido (preco_total, forma_pagamento, id_user, situacao) VALUES ('$preco_unitario', 'Cartão de crédito', '$id_cliente' ,'Em Produção')";
     $resposta_insert = mysqli_query($conn, $res_insert);
-    $res_insert2 = "INSERT into item (id_pedido, id_produto, quantidade, preco_unitario) VALUES ('1', '$id','$quantidade', '$preco_total')";
+    $res_insert2 = "INSERT into item (id_pedido, id_produto, quantidade, preco_unitario) VALUES ('1', '$id','$quantidade', '$preco_unitario')";
     $resposta_insert2 = mysqli_query($conn, $res_insert2);
-    header("location : compras.php");
+    header("location: menu.html");
 }

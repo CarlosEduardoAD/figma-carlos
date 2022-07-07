@@ -38,5 +38,4 @@ if($enviar == 'Enviar'){
     header("location: menu.html");
     die();
 }
-
 ?>
