@@ -14,17 +14,24 @@ $id_produto = $row['id_produto'];
 $nome_produto = $row['nome_produto'];
 $preco_produto = $row['preco_produto'];
 
-echo "<h1>$nome_cliente</h1>";
-echo "<h1>$id_pedido</h1>";
-echo "<h1>$preco_total</h1>";
-echo "<h1>$forma_pagamento</h1>";
-echo "<h1>$situacao</h1>";
-echo "<h1>$id_produto</h1>";
-echo "<h1>$nome_produto</h1>";
-echo "<h1>$preco_produto</h1>";
-
-
-
-
-
+while($row = mysqli_fetch_assoc($result)){
+    $format = "<div style='width: 395px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    border : none;'>
+        <div style='display : flex;
+        align-items: center;
+        justify-content: start;
+        background: rgb(0, 0, 0);
+        width: 400px;
+        color : white;
+        border-radius: 23px 0px 14px 23px;'>
+        <h1>%s</h1>
+        </div>
+    </div>";
+    printf($format, $nome_cliente);
+}
 ?>
